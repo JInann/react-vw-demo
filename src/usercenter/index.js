@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import styled from 'styled-components'
-import './index.css'
+// import './index.css'
+import './style.scss'
 
 let vw = num=>((num/750)*100).toFixed(3)+'vw'
 
@@ -25,6 +26,9 @@ const ItemImg = styled(Img)`
 const Main = styled.div`
     padding:${vw(34)};
 `
+const ListTitle = styled.h2`
+    font-size:${vw(36)};
+`
 
 class UserCenter extends Component{
     render(){
@@ -41,7 +45,7 @@ class UserCenter extends Component{
                 </div>
                 <Main>
                 <div className="mylist">
-                    <h2>我的列表</h2>
+                    <ListTitle>我的列表</ListTitle>
                     <MyList>
                         <ListItem>
                             <ItemImg src={require('../img/家人管理.png')}></ItemImg>
