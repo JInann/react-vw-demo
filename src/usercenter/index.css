@@ -1,0 +1,29 @@
+.usercenter{
+    text-align: left;
+}
+.usercenter .banner{
+    height: 288px;
+    background: url(../img/Group30@2x.png);
+    background-size: 750px 288px;
+    position: relative;
+}
+.usercenter .banner .info{
+    position: absolute;
+    bottom: 64px;
+    padding: 0 32px 0 160px;
+    color: white;
+    line-height: 52px;
+}
+.usercenter .banner .info .photo{
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: 32px;
+}
+.usercenter .banner .info .photo img{
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+}
